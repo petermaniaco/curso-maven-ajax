@@ -34,6 +34,18 @@ public class Programa {
 		
 		GestorUsuario.borraUsuario(usuario4);
 		System.out.println("Usuarios despues del borrado:\n" + GestorUsuario.muestroTodosLosUsuarios());
+	
+	
+		System.out.println("\n*******ANIMALES*******");
+		
+		Animal hiro = new Animal("Hiro", "perro", "macho", 11.5f, 10);
+		Animal leon = new Animal("Leon", "perro", "macho", 12.5f, 4);
+		
+		System.out.println(hiro.toString());
+		System.out.println(leon.toString());
+		
+		System.out.println(hiro.isMayor(leon) ? "Hiro es mayor que Leon" : "Leon es mayor que Hiro");
+	
 	}
 
 }
